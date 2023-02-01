@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="forms_wrapper">
+    <div class="form_wrapper">
+      <div class="form">
+        <h1>Projects</h1>
+
+        <div class="project_card">
+          <p>Name of Project</p>
+          <p>Action</p>
+        </div>
+        {{#if projects.length}}
+
+          {{#each projects}}
+            <div class="project_card">
+              <a href="/project/{{this.id}}">
+                <p>{{this.name}}</p>
+              </a>
+              <a href="/api/project/delete/{{this.id}}">Delete</a>
+            </div>
+          {{/each}}
+        {{/if}}
+
+      </div>
+    </div>
+    <div class="form_wrapper">
+      <form class="form" action="/api/project" method="post">
+        <h1>Create Project</h1>
+        <div>
+          <input type="text" placeholder="Enter Project Title" name="name" />
+        </div>
+        <div>
+          <textarea
+            height="50px"
+            placeholder="Description"
+            rows="7"
+            name="description"
+          ></textarea>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Create Now</button>
+      </form>
+    </div>
+  </div>
+  <div class="mt-20">
+    <h2
+      class="card-title mb-8 justify-center"
+      style="font-size:28px; text-align:center; color:#fff; animation:popup 2s; margin-top:40px"
+    >Project Summary</h2>
+    <div class="flex justify-center">
+      <div style="width:75%;">
+        <div id="chart"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.js"
+></script>
+
+<script src="/js/profile.js"></script>
