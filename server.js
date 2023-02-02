@@ -1,28 +1,38 @@
 const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
+const hbspath = require('path')
 
 
-app.engine('handlebars', exphbs.engine({extname: 'handlebars', defaultLayout: 'main'}));
-app.set('view engine', 'handlebars')
+app.engine('handlebars', exphbs.engine({
+    extname: 'handlebars',
+    defaultLayout: 'main',
+    layoutsDir: hbspath.join(__dirname, 'views/layouts') 
+}));
+
+app.set('view engine', 'handlebars');
 
 
 // routing
 // "/" template currently set to index.handlebars for personal testing
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index',
+     { title: 'index MPM'});
 });
 
 app.get('/homepage', (req, res) => {
-    res.render('homepage');
+    res.render('homepage',
+     { title: 'My Project Manager'});
 });
 
 app.get('/projects', (req, res) => {
-    res.render('projects');
+    res.render('projects',
+     { title: 'My Projects'});
 });
 
 app.get('/login', (req, res) => {
-    res.render('login');
+    res.render('login',
+     {title: 'MPM Login'});
 });
 
 
