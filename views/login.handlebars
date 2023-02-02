@@ -1,0 +1,56 @@
+
+<body>
+         <!-- Login Modal -->
+         <div class="loginmodal hidden">
+            <div class="z-30 w-full h-full absolute top-0 left-0 "></div>
+        
+            
+            <div class="absolute rounded-lg px-4 sm:px-10 py-10 top-20 w-11/12 md:w-5/12 z-50 mx-auto left-0 right-0 bg-modal " style="z-index: 1000000000 !important;">
+                <button class="closeloginmodal absolute top-5 right-5">
+                    <i class="fa-sharp fa-solid fa-xmark text-4xl text-white"></i>
+                </button>                                  
+                <div class="flex justify-between gap-5 sm:gap-10 w-full">
+                    <!-- Login -->
+                    <form id="login" class="w-full" action="#" method="POST">
+                        <p class="mt-5 font-medium text-4xl text-white text-center">Login</p>
+                        <input type="hidden" name="remember" value="true">
+                        <div class="mt-5 space-y-4 rounded-md shadow-sm w-full">
+                            <div class=""> 
+                                <input id="email-address" name="email" type="email" autocomplete="email" required class="mt-1 relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Email address">
+                            </div>
+                            <div> 
+                                <input id="password" name="password" type="password" autocomplete="current-password" required class="mt-2 relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Password">
+                            </div>
+                        </div>  
+                        <div>
+                            <button type="submit" class="mt-16 group relative flex w-full justify-center rounded-md border border-transparent bg-white py-2 px-4 text-lg font-medium text-black font-medium focus:outline-none">
+                                Login in
+                            </button>
+                        </div>
+                    </form>
+                    <!-- SIgnin -->
+                    <form id="signin" class="w-full" action="#" method="POST">
+                        <p class="mt-5 font-medium text-4xl text-white text-center">Sign In</p>
+                        <input type="hidden" name="remember" value="true">
+                        <div class="mt-5 space-y-4 rounded-md shadow-sm">
+                            <div> 
+                                <input id="name" name="name" type="name" autocomplete="name" required class="mt-1 relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Name">
+                            </div>
+                            <div> 
+                                <input id="email-address" name="email" type="email" autocomplete="email" required class="mt-1 relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Email address">
+                            </div>
+                            <div> 
+                                <input id="password" name="password" type="password" autocomplete="current-password" required class="mt-2 relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Password">
+                            </div>
+                        </div>  
+                        <div>
+                            <button type="submit" class="mt-3.5 group relative flex w-full justify-center rounded-md border border-transparent bg-white py-2 px-4 text-lg font-medium text-black font-medium focus:outline-none">
+                                Sign in
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        {{>animatedBg}}

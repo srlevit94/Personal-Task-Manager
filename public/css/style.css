@@ -1,3 +1,99 @@
+<<<<<<< HEAD
+.navbar {
+
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+
+    
+    body {
+
+        margin: 0;
+            overflow: hidden;
+            filter: invert(0);
+        }
+        
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .bg-modal{  
+            /* From https://css.glass */
+                background: rgba(89, 16, 148, 0.21);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5.4px);
+                -webkit-backdrop-filter: blur(11.4px);
+                /*border: 1px solid rgba(255, 255, 255, 1);*/
+            } 
+          
+                .btn {
+                    /* reset */
+                   
+                    border: 0;
+                    outline: 0;
+                    /* styles */
+                    position: relative;
+                    background: linear-gradient(-45deg, #281daa,#093d5d,#161a72,#623ecf,#453372);
+                     background-size: 400% 400%;
+                     animation: gradientBG 4.5s ease infinite;
+                    padding: 1.5rem 7rem;
+                    /*color: black;*/
+                   
+                   
+                    transition: .3s;
+                 }
+                 @keyframes gradientBG {
+                     0% {
+                         background-position: 0% 50%;
+                     }
+                     50% {
+                         background-position: 100% 50%;
+                     }
+                     100% {
+                         background-position: 0% 50%;
+                     }
+                 }
+                   
+       
+            .gradient {
+                background: #8b11ce;
+                background: -webkit-linear-gradient(to right, #2793d7, #780687, #970ab7);
+                background: linear-gradient(to right, #06bde7, #bf0dec, #8A2387); 
+                    
+                    -webkit-background-clip: text;
+                    
+                  
+                
+               
+                
+                color: transparent;
+              }
+            
+             
+        /*page 2 sidebar*/
+       
+        /* bg 2 page*/
+        ::-webkit-scrollbar {
+            width: .5rem;
+            height: .5rem;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,.15);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0,0,0,.3);
+        }
+        /*dashbord btn*/
+    
+        textarea {
+            width: 600px;
+            height: 450px;
+          }
+    /* droupdown*/
+
+=======
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
@@ -271,3 +367,4 @@ div .dot {
         transform: scale(1);
     }
 }
+>>>>>>> 5a13df2d459b955904863c25985c9bd8056706b9
