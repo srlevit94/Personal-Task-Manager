@@ -143,3 +143,4 @@ $(".closeloginmodal").click(function(){
   });
   
 /* page 2 sidebar*/
+
