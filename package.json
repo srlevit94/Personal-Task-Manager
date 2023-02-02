@@ -1,12 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "personal-task-manager",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+=======
+  "name": "develop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+>>>>>>> 5a13df2d459b955904863c25985c9bd8056706b9
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/srlevit94/Personal-Task-Manager.git"
@@ -23,3 +31,19 @@
     "express-handlebars": "^6.0.7"
   }
 }
+=======
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0"
+  }
+}
+>>>>>>> 5a13df2d459b955904863c25985c9bd8056706b9
