@@ -3,6 +3,7 @@ const app = express();
 const exphbs = require('express-handlebars');
 const hbspath = require('path')
 
+app.use(express.static(__dirname + '/public'));
 
 app.engine('handlebars', exphbs.engine({
     extname: 'handlebars',
@@ -11,7 +12,6 @@ app.engine('handlebars', exphbs.engine({
 }));
 
 app.set('view engine', 'handlebars');
-
 
 // routing
 // "/" template currently set to index.handlebars for personal testing
