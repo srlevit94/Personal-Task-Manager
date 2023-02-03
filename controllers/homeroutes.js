@@ -19,7 +19,6 @@ router.get("/", auth, async (req, res) => {
         });
 
         const user = userData.get({ plain: true });
-        console.log(user)
         res.render("index", {
             ...user,
             loggedIn: true,
@@ -29,32 +28,18 @@ router.get("/", auth, async (req, res) => {
     }
 });
 
-router.get("/project/:id", async (req, res) => {
-    try {
-        const projectData = await Project.findByPk(req.params.id, {
-            include: [
-                {
-                    model: User,
-                    attributes: ["name"],
-                },
-            ],
-        });
 
-        const project = projectData.get({ plain: true });
+router.get("/analytics", async (req, res) => {
 
-        res.render("project", {
-            ...project,
-            loggedIn: req.session.logged_in,
-        });
-    } catch (err) {
-        res.status(500).json(err);
-    }
+    res.render('Analytics', { loggedIn: req.session.logged_in, user_id: req.session.user_id })
 });
 
 router.get('/login', (req, res) => {
     res.render('loginSignup')
 })
-router.get('/analytics', auth, (req, res) => {
-    res.render('analytics', { loggedIn: req.session.logged_in, user_id: req.session.user_id })
+
+router.get('/createProject', (req, res) => {
+    res.render('createProject', { loggedIn: req.session.logged_in, user_id: req.session.user_id })
+
 })
 module.exports = router
