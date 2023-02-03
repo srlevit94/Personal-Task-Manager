@@ -1,4 +1,4 @@
-# Personal-Task-Manager
+# Work Wrangler
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Tabe of Contents
@@ -12,6 +12,8 @@
 * [DeployedApplication](#deployed-application)
 
 * [License](#license)
+
+* [Contributors](#contributors)
 
 ## Description
 
@@ -42,3 +44,15 @@ Tailwind
 ```
  MIT
 ```
+
+## Contributors
+
+* [laboettcher](https://github.com/laboettcher)
+
+* [marsmeshed](https://github.com/marsmeshed)
+
+* [Mary90272](https://github.com/Mary90272)
+
+* [srlevit94](https://github.com/srlevit94)
+
+* [VulnusR](https://github.com/VulnusR)
