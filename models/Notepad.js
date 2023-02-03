@@ -11,25 +11,14 @@ Notepad.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        comments: {
-            type: DataTypes.JSON,
-            allowNull: true,
-            get() {
-                return JSON.parse(this.getDataValue('comments'));
-            },
-            set(val) {
-                this.setDataValue('comments', JSON.stringify(val));
-            }
+        worked: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
+
         links_used: {
-            type: DataTypes.JSON,
-            allowNull: true,
-            get() {
-                return JSON.parse(this.getDataValue('links_used'));
-            },
-            set(val) {
-                this.setDataValue('links_used', JSON.stringify(val));
-            }
+            type: DataTypes.STRING,
+            allowNull: true
         },
 
         project_id: {

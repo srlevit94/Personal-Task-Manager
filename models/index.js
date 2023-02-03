@@ -14,15 +14,4 @@ Project.hasOne(NotePad, {
     foreignKey: 'project_id'
 })
 
-module.exports = { User, Project };
-=======
-
-User.hasMany(Project, {
-  foreignKey: 'project_id',
-});
-
-Project.belongsTo(User, {
-  foreignKey: 'user_id',
-});
-
-module.exports = { User, Project };
+module.exports = { User, Project, NotePad };
