@@ -1,4 +1,4 @@
-# Personal-Task-Manager
+# Work Wrangler
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Tabe of Contents
