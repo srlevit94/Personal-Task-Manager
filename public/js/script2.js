@@ -12,6 +12,16 @@ toggle.addEventListener('click', () => {
 
 });
 
+function openNav() {
+  document.getElementById('mySidebar').style.width = '250px';
+  document.getElementById('main').style.marginLeft = '250px';
+}
+
+function closeNav() {
+  document.getElementById('mySidebar').style.width = '0px';
+  document.getElementById('main').style.marginLeft = '0px';
+}
+
 navItems.forEach(navItem => {
 
   navItem.addEventListener('click', () => {
