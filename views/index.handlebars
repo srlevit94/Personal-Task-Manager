@@ -13,7 +13,7 @@
               </div>
             </header>
           
-            <aside class="fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-60">
+            <aside id='mySidebar' class="sidebar fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-auto">
               <div class="flex flex-col justify-between h-full">
                 <div class="flex-grow">
                   <div class="px-4 py-6 text-center border-b">
@@ -22,6 +22,7 @@
                   <div class="p-4">
                     <ul class="space-y-1">
                       <li>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="/" class="flex items-center bg-yellow-200 rounded-xl font-bold text-sm text-yellow-900 py-3 px-4">
                           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-lg mr-4" viewBox="0 0 16 16">
                             <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
@@ -64,7 +65,8 @@
               </div>
             </aside>
             
-            <main class=" page ml-60 pt-16 max-h-screen overflow-auto" id="Projects">
+            <main id='main' class=" page ml-60 pt-16 max-h-screen overflow-auto" id="Projects">
+              <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
               <div class="px-6 py-8">
                 <div class="max-w-4xl mx-auto">
                   <div class="bg-white rounded-3xl p-8 mb-5">

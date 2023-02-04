@@ -1,4 +1,5 @@
-<div class="relative bg-yellow-50 overflow-hidden max-h-screen">
+<div id='main' class="relative bg-yellow-50 overflow-hidden max-h-screen">
+  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
   <header class="fixed right-0 top-0 left-60 bg-yellow-50 py-3 px-4 h-16">
     <div class="max-w-4xl mx-auto">
       <div class="flex items-center justify-between">
@@ -13,7 +14,7 @@
     </div>
   </header>
 
-  <aside class="fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-60">
+  <aside id='mySidebar' class="sidebar fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-60">
     <div class="flex flex-col justify-between h-full">
       <div class="flex-grow">
         <div class="px-4 py-6 text-center border-b">
@@ -25,6 +26,8 @@
         <div class="p-4">
           <ul class="space-y-1">
             <li>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
               <a
                 href="/"
                 class="flex items-center bg-yellow-200 rounded-xl font-bold text-sm text-yellow-900 py-3 px-4"
@@ -147,7 +150,17 @@
   <!-- JS File -->
 
 </div>
+<script>
+  function openNav() {
+  document.getElementById('mySidebar').style.width = '250px';
+  document.getElementById('main').style.marginLeft = '250px';
+}
 
+function closeNav() {
+  document.getElementById('mySidebar').style.width = '0px';
+  document.getElementById('main').style.marginLeft = '0px';
+}
+</script>
 <script
   src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
 ></script>
