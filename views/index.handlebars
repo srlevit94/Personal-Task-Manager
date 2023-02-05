@@ -1,11 +1,11 @@
         <div class="relative bg-primary dark:bg-dark overflow-hidden max-h-screen">
-            <header class="right-0 top-0 left-60 bg-yellow-400 py-3 px-4 h-24">
+            <header class="right-0 top-0 left-60 bg-btn py-3 px-4 h-24">
               <div class="max-w-4xl mx-auto">
                 <div class="flex flex-direction:column items-center justify-between">
                   
                   <button class="openbtn" onclick="openNav()">&#9776;</button>
               <br>
-              <div class="text-lg font-bold">Work Wrangler</div>
+              <div class="text-lg font-bold">WORK WRANGLER</div>
                   
                 </div>
               </div>
@@ -68,10 +68,10 @@
               <div class="px-6 py-8">
                 <div class="max-w-4xl mx-auto">
                   <div class="bg-white rounded-3xl p-8 mb-5">
-                    <h1 class="text-3xl font-bold mb-10">Dashboard Personal Tool</h1>
+                    <h1 class="text-3xl font-bold mb-10">Dashboard</h1>
                     <div class="flex items-center justify-between">
                       <div class="flex items-stretch">
-                        <div class="text-gray-400 text-xs">Be in <br>Touch</div>
+                        <div class="text-gray-400 text-xs">Resources<br></div>
                         <div class="h-100 border-l mx-4"></div>
                       
                      
@@ -112,7 +112,7 @@
                               <div class="font-bold text-xl text-gray-800 leading-none">Create New <br>Project</div>
                               <div class="mt-5">
                                 <button type="button" class="inline-flex items-center justify-center py-2 px-3 rounded-xl bg-white text-gray-800 hover:text-green-500 text-sm font-semibold transition">
-                                  <a href="/createProject" class="font-bold text-sm ml-2">Open</a>
+                                  <a href="/createProject" class="font-bold text-sm ml-2">Create</a>
                                 </button>
                               </div>
                             </div>
@@ -131,7 +131,7 @@
                           </div>
                           <div class="col-span-2">
                             <div class="p-4 bg-purple-100 rounded-xl text-gray-800">
-                              <div class="font-bold text-xl leading-none">Your daily plan</div>
+                              <div class="font-bold text-xl leading-none">Active Projects</div>
                               <div class="mt-2">{{projects.length}} of  {{projects.length}}</div>
                             </div>
                           </div>
@@ -145,7 +145,6 @@
                           <div class="p-4  bg-white border rounded-xl text-gray-800 space-y-2">
                             <div class="flex justify-between">
                               <div class="text-gray-400 text-xs">Total time: {{hr}}:{{min}}:{{sec}}</div>
-                              <div class="text-gray-400 text-xs">time spent on project</div>
                             </div>
                             <a href="javascript:void(0)" class="font-bold hover:text-yellow-800 hover:underline">{{name}}</a>
                             <div class="text-sm text-gray-600">
