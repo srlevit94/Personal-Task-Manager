@@ -22,6 +22,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .bg-primary {
+          @apply bg-gradient-to-br 
+      from-purple-300 
+      to-blue-400 
+      via-cyan-200;
+        }
+        .bg-dark {
+          @apply bg-gradient-to-br
+          from-purple-800
+          to-blue-800
+          via-cyan-800
+        }
+
+        .bg-light {
+          @apply bg-gradient-to-br
+          from-purple-300
+          to-blue-200
+          via-pink-300
+        }
+
+        .bg-btn {
+        @apply 
+        bg-gradient-to-br
+          from-pink-400
+          to-purple-300
+          via-yellow-400
+         }
+
+      };
+ 
+    </style>
+
     <title>Task Manager</title>
   </head>
   <body>
@@ -31,5 +77,5 @@
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
   ></script>
   <script src="/js/script.js"></script>
-  <script src="tailwind.config.js"></script>
+  
 </html>
