@@ -35,8 +35,11 @@ Tailwind
 
 ## Mock-Up
 
+![Screenshot (17)](https://user-images.githubusercontent.com/112605303/217065809-b3a7d268-8fd1-4f88-b4c8-bbd24e59b5d4.png)
 
 ## Deployed Application
+Here is a link to our live-site:
+https://work-wrangler.herokuapp.com/login
 
 
 ## License 
