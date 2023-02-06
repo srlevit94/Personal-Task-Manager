@@ -1,4 +1,72 @@
+<div class="carouselmodal hidden">
+  <button class="closeloginmodal bg-purple-100 absolute top-2 right-2">
+    <i class="fa-sharp fa-solid fa-xmark text-4xl text-blue-900"></i>
+  </button>
+  <div
+    class="w-full h-full absolute top-0 left-0"
+    style="backdrop-filter: blur(10px);z-index: 100000 !important;"
+  ></div>
+  <div
+    class="absolute rounded-lg px-10 py-10 top-20 w-11/12 md:w-10/12 mx-auto left-0 right-0"
+    style="z-index: 1000000000 !important;"
+  >
+    <button class="closecarouselmodal absolute right-0">
+      <i class="fa-sharp fa-solid fa-xmark text-4xl text-blue-900 "></i>
+    </button>
+    <div class="w-full">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=2gIVB2wGcQ4" target="_blank">
+              <img class="" src="https://i.imgur.com/ERQvHvY.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://sieraford.github.io/mood-mixer/" target="_blank">
+              <img src="https://i.imgur.com/BCiwuSa.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=wPczXD5qwbE" target="_blank">
+              <img src="https://i.imgur.com/hnXgZWA.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk" target="_blank">
+              <img src="https://i.imgur.com/RKUvshJ.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
 
+            <a href="https://www.buzzfeed.com/quizzes" target="_blank">
+              <img src="https://i.imgur.com/jXhL9OS.png" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href=" https://www.britannica.com/quiz/browse" target="_blank">
+              <img src="https://i.imgur.com/pqkEQ7b.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.pinterest.com/" target="_blank">
+              <img src="https://i.imgur.com/f21OcNl.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <i
+            class="fa-solid fa-circle-chevron-right text-brand-blue text-5xl"
+          ></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i
+            class="fa-solid fa-circle-chevron-left text-brand-blue text-5xl"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="relative bg-primary dark:bg-dark overflow-hidden max-h-screen">
             <header class="right-0 top-0 left-60 bg-btn py-3 px-4 h-24">
               <div class="max-w-4xl mx-auto">
@@ -13,7 +81,7 @@
   </div>
   </header>
 
-  <aside id='mySidebar' class="sidebar fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-60">
+  <aside id='mySidebar' class="sidebar fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-auto">
     <div class="flex flex-col justify-between h-full">
       <div class="flex-grow">
         <div class="px-4 py-6 text-center border-b">
@@ -29,7 +97,7 @@
 
               <a
                 href="/"
-                class="flex items-center bg-white hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
+                class="flex items-center  hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +116,7 @@
             <li>
               <a
                 href="/createProject"
-                class="flex bg-white hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
+                class="flex  hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +135,7 @@
             <li>
               <a
                 href="/analytics"
-                class="flex bg-white hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
+                class="flex hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -85,8 +153,8 @@
             </li>
             <li>
               <a
-                href="javascript:void(0)"
-                class="flex bg-white hover:bg-btn rounded-xl font-bold text-sm text-gray-900 py-3 px-4"
+                href="#"
+                class=" opencarouselmodal flex hover:bg-btn rounded-xl font-bold text-sm text-blue-900 py-3 px-4"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -131,8 +199,8 @@
     </div>
   </aside>
 
-<div class="bg-light ">
-  <div class="px-4 py-6 text-center border-b bg-light">
+<div class="bg-light h-full">
+  <div class="px-4 py-6 text-center border-b ">
     <h1 class="text-xl font-bold leading-none"><span
         class="text-yellow-700"
       >Analytics</span>
@@ -140,7 +208,7 @@
     <div class="container">
 
       <canvas
-        style="position: relative; width: 100px; height: 100px;"
+        style="position: relative; width: 100px; height: 100%;"
         id="myChart"
         text="orange"
       >
@@ -168,3 +236,15 @@ function closeNav() {
 ></script>
 <script src="./js/chart.js"></script>
 <script src=".js"></script>
+    <script src="./js/script2.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+></script>
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+></script>
+<script src="/js/javascript.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+  defer
+></script>

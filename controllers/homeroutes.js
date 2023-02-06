@@ -29,16 +29,20 @@ router.get("/", auth, async (req, res) => {
 });
 
 
-router.get("/analytics", async (req, res) => {
+router.get("/analytics", auth, async (req, res) => {
 
     res.render('Analytics', { loggedIn: req.session.logged_in, user_id: req.session.user_id })
 });
+
+router.get('/funtime', auth, (req, res) => {
+    res.render('funtime')
+})
 
 router.get('/login', (req, res) => {
     res.render('loginSignup')
 })
 
-router.get('/createProject', (req, res) => {
+router.get('/createProject', auth, (req, res) => {
     res.render('createProject', { loggedIn: req.session.logged_in, user_id: req.session.user_id })
 
 })
