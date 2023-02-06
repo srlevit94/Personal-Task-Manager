@@ -7,7 +7,7 @@ window.onload = function () {
                     let myChart = document.getElementById('myChart').getContext('2d');
 
                     let barChart = new Chart(myChart, {
-                        type: 'bar', data: { labels: arr.name, datasets: [{ label: 'Time Spent  (MINUTES)', data: arr.time, backgroundColor: 'orange' }] }, options: {
+                        type: 'bar', data: { labels: arr.name, datasets: [{ label: 'Time Spent  (MINUTES)', data: arr.time, backgroundColor: 'darkorange' }] }, options: {
                             responsive:
                                 true, maintainAspectRatio: false,
                         }
